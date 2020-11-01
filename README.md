@@ -113,7 +113,7 @@ postgresql://USER:PASSWORD@HOST:PORT/DATABASE
   ``` 
   **starts front end!**
   
-  **Alternative database interface**
+## Alternative database interface
   * on backend project you can run:
   ```sh
   npx prisma studio --experimental
