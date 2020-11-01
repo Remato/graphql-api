@@ -1,0 +1,31 @@
+scalar Date
+
+type Rides {
+  id:       Int!
+  from:     String!
+  to:       String!
+  driverId: Int!
+  driver:   Drivers
+  value:    Float!
+}
+
+type Drivers {
+  id:           ID!
+  name:         String!
+  age:          Int!
+  dateCreation: Date!
+  rides:        [Rides]
+}
+
+type Query {
+  rides: [Rides!]
+  drivers: [Drivers!]!
+}
+
+type Mutation {
+  createDriver(name: String!, age: Int!): Drivers
+  deleteDriver(id: Int!): Boolean!
+  createRide(driver: Int!, from: String!, to: String!, value: Float!): Rides
+  updateRide(id: Int!, driver: Int!, from: String!, to: String!, value: Float!): Rides
+  deleteRide(id: Int!): Boolean!
+}

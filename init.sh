@@ -1,0 +1,1 @@
+cd backend && yarn && yarn dev && cd ../frontend && yarn && npx prisma migration up --experimental && yarn start
