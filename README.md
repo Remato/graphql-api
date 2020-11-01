@@ -86,12 +86,12 @@ deleteRide(
 
 ## Quickstart
 
-**set your database on backend/prisma/.env**
+1 - set your database on **backend/prisma/.env**
 
 ```prisma
 postgresql://USER:PASSWORD@HOST:PORT/DATABASE
 ```
-
+2 - install dependencies and run.
 
 * [Automatic]: at the root of the project and run
   ```sh
@@ -112,7 +112,8 @@ postgresql://USER:PASSWORD@HOST:PORT/DATABASE
   cd frontend && yarn && yarn start
   ``` 
   **starts front end!**
-
+  
+  **Details**
   * cd backend && yarn ( install dependencies )
   * npx prisma migration up --experimental ( up database )
   * yarn dev ( run back end )
