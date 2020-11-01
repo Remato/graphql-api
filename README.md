@@ -95,6 +95,10 @@ postgresql://USER:PASSWORD@HOST:PORT/DATABASE
 
 * [Automatic]: at the root of the project and run
   ```sh
+  chmod +x backend.sh frontend.sh
+  ```
+  
+  ```sh
   ./backend.sh
   ```
 
