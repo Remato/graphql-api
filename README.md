@@ -113,9 +113,25 @@ postgresql://USER:PASSWORD@HOST:PORT/DATABASE
   ``` 
   **starts front end!**
   
+  **Alternative database interface**
+  * on backend project you can run:
+  ```sh
+  npx prisma studio --experimental
+  ```
+  **The prisma uses GraphQL and creates the same interface used to access an API, to create an interface to access the database.**
+
+  http://localhost:5555
+  prisma studio if you want to interact directly with the database
+
+  http://localhost:4000
+  standard GraphQL API interface 
+  
+  http://localhost:3000 
+  React app site
+
   **Details**
   * cd backend && yarn ( install dependencies )
-  * npx prisma migration up --experimental ( up database )
+  * npx prisma migrate up --experimental ( up database )
   * yarn dev ( run back end )
   * cd ../frontend && yarn ( install dependencies )
   * yarn start ( run fron end )
