@@ -1,0 +1,1 @@
+cd backend && yarn && npx prisma migration up --experimental && yarn dev
