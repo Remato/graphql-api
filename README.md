@@ -1,5 +1,3 @@
-![oowlish](https://www.oowlish.com/wp-content/uploads/2017/10/header-logo-dark.png)
-
 # Drivers & Rides
 This project provides a GraphQL API that manipulates data from Drivers and Rides. The project was divided into 2 modules:
 
